@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $('.tabs').tabs();
+            });
+        </script>
+        <title>Wordifire</title>
+    </head>
+    <body>
+        <div class="app">
+            <!-- subscribe for notification area -->
+            <div class="subscribe-notification-area" id="subscribe-notification-area" onclick="subscribeForNotification();">
+                <img src="https://img.icons8.com/ios-filled/25/FFFFFF/appointment-reminders.png"/>
+            </div>
+            <!-- loding screen  -->
+            <div id="loading-screen">
+                <h5>Hang on a sec ..</h5>
+                <div class="grey darken-4"></div>
+            </div>
+            <nav class="app-nav-main nav-extended grey darken-4">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Wordifire</a>
+                </div>
+                <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#AllWords">ALL WORDS</a></li>
+                    <li class="tab"><a href="#Fav">FAVOURITES</a></li>
+                    <li class="tab"><a href="#About">ABOUT</a></li>
+                </ul>
+                </div>
+            </nav>
+            <div id="AllWords" class="col s12">
+                <!-- All words goes here -->
+            </div>
+            <div id="Fav" class="col s12">
+                <!-- favourite words section -->
+            </div>
+            <div id="About" class="col s12">
+                <!-- about section -->
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <!-- <script>
+            getWordData();         
+        </script> -->
+    </body>
+</html>
