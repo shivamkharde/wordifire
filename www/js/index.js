@@ -339,8 +339,9 @@ function getRandomCardColor(){
 
 // function is to load favorite word tab
 function populateFavorites(data){
-    var fav = localStorage.getItem("fav");
+    var fav = JSON.parse(localStorage.getItem("fav"));
     var card = "";
+
     if(fav!=null && fav[0]!=null){
         for (let index = 0; index < fav.length; index++) {
             for (let j = 0; j < data.data.length; j++) {    
